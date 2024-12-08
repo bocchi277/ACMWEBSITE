@@ -137,7 +137,9 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
     .about-section {
         flex-direction: column; /* Stack content vertically */
-        padding: 30px 15px;
+        padding: 30px 30px;
+        gap: 30px;
+        margin-bottom: 5vh;
     }
 
     .about-content {
@@ -149,7 +151,7 @@ nav ul li a:hover {
     }
 
     .about-section div img {
-        width: 60%; /* Adjust image size */
+        width: 100%; /* Adjust image size */
     }
 }
 
@@ -164,7 +166,7 @@ nav ul li a:hover {
     }
 
     .about-section div img {
-        width: 90%; /* Almost full width for mobile images */
+        width: 100%; /* Almost full width for mobile images */
     }
 }
 .events-section {
@@ -208,9 +210,6 @@ nav ul li a:hover {
     font-weight: 900;
     color: #192785;
     font-family:  "Protest Revolution"
-}
-.highlights-section{
-    margin: 10vh;
 }
 .highlights-section h2{
     font-size: 2.5rem;
@@ -515,8 +514,32 @@ article img {
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .events-section{
+        height: 130vh;
+    }
+    #event-headline{
+        font-size: 1.8rem;
+    }
     .event-item {
         width: 48%; /* Make the items take up less width on medium screens */
+    }
+    .event-item img{
+        width: 70%;
+    }
+    #tech-talk{
+        width: 70%;
+    }
+    .highlights-section h2{
+        font-size: 1.8rem;
+    }
+    .highlights-section p{
+        font-size: 1.2rem;
+    }
+    .slider-wrapper{
+        width: 60%;
+    }
+    .slider-prev-next-control{
+        width: 60%;
     }
 }
 
@@ -550,7 +573,6 @@ article img {
         position: fixed;
         top: 0;
         left: -55vw;
-        /* Hidden initially */
         width: 55vw;
         height: 100vh;
         background-color: #1a1a2e;
@@ -574,6 +596,18 @@ article img {
     .dropdown-links.active {
         left: 0;
         /* Slide into view */
+    }
+    .home-section{
+        width: 80vw;
+    }
+    #overlay{
+        width: 120vw;
+    }
+    .home-content h2{
+        font-size: 1.7rem;
+    }
+    .home-content p{
+        font-size: 1rem;
     }
 }
 
@@ -603,4 +637,5 @@ article img {
         /* Adjust link size for smaller screens */
         padding: 8px 15px;
     }
+
 }

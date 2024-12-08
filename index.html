@@ -14,86 +14,162 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="logo">
+                <!-- Add your logo image here -->
+                <img src="images/logo.png" alt="ACM Logo" title="ACM Student Chapter Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" id="menu-btn">&#9776;</button> <!-- Hamburger button -->
+            <ul class="dropdown-links" id="dropdown-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Home Section -->
 
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="logo">
-            <!-- Add your logo image here -->
-            <img src="images/logo.png" alt="ACM Logo" title="ACM Student Chapter Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="menu-btn" id="menu-btn">&#9776;</button> <!-- Hamburger button -->
-        <ul class="dropdown-links" id="dropdown-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <h2>Welcome to the ACM Student Chapter</h2>
-            <p>Join us to explore the world of technology, coding, and innovation.</p>
-        </div>
-    </section>
+        <section id="home" class="home-section">
+            <div id="overlay">
+            </div>
+            <div class="home-content">
+                <h2>Welcome to the ACM Student Chapter</h2>
+                <p>Join us to explore the world of technology, coding, and innovation.</p>
+            </div>
+        </section>
+    </header>
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>The ACM-XIM Chapter is a leading technical student chapter at XIM University, inspiring young tech
-            enthusiasts to explore technology. We organize events in web development, IoT, AI, ML, and more, providing a
-            hub for innovation and learning.</p>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>The ACM-XIM Chapter is a leading technical student chapter at XIM University, inspiring young tech
+                enthusiasts to explore technology. We organize events in web development, IoT, AI, ML, and more,
+                providing a
+                hub for innovation and learning.</p>
+        </div>
+        <div>
+            <img src="DSC_0113.JPG" alt="">
+        </div>
     </section>
 
     <!-- Events Section -->
+    <h2 id="event-headline">Upcoming Events</h2>
     <section id="events" class="events-section">
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li>Web Styledown Challenge</li>
-            <li>Tech Talks and Workshops</li>
-        </ul>
+        <div class="event-item">
+            <img src="WebStyledown.jpg" alt="Web Styledown Challenge">
+            <p>Web Styledown Challenge</p>
+        </div>
+
+        <div class="event-item">
+            <img src="DSC_0581.JPG" alt="Tech Talks and Workshops" id="tech-talk">
+            <span>Tech Talks and Workshops</span>
+        </div>
     </section>
+
 
     <!-- Image Highlights Section -->
     <section id="image-highlights" class="highlights-section">
         <h2>Event Highlights</h2>
         <p>Take a glimpse into some of our past events:</p>
-        <div class="gallery-container">
-            <img src="images/event1.jpg" alt="Event 1" title="CODEWAVE">
-            <img src="images/event2.jpg" alt="Event 2" title="MINDSPARK">
-            <img src="images/event3.jpg" alt="Event 3" title="LOGICLOOM">
-        </div>
-    </section>
+        <div class="wrapper">
+            <input checked type=radio name="slider" id="slide1" />
+            <input type=radio name="slider" id="slide2" />
+            <input type=radio name="slider" id="slide3" />
+            <input type=radio name="slider" id="slide4" />
+            <input type=radio name="slider" id="slide5" />
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:student.chap.acm@xim.edu.in">student.chap.acm@xim.edu.in</a></p>
-        <p>Follow us on our social media platforms for updates:</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/acm_xim/" target="_blank">
-                <img src="images/instagram-icon.png" alt="Instagram" title="Follow us on Instagram">
-            </a>
-            <a href="https://www.linkedin.com/company/xim-acm/mycompany/" target="_blank">
-                <img src="images/linkedin-icon.png" alt="LinkedIn" title="Connect with us on LinkedIn">
-            </a>
+            <div class="slider-wrapper">
+                <div class=inner>
+                    <article>
+                        <div class="info top-left">
+                            <img src="/2.jpg" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-right">
+                            <h3>CODEWAVE</h3>
+                        </div>
+                        <img src="Logicloom.png" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>MINDSPARK</h3>
+                        </div>
+                        <img src="MINDSPARK (1).jpg" />
+                    </article>
+
+                    <article>
+                        <div class="info top-right">
+                            <h3>LOGICLOOM</h3>
+                        </div>
+                        <img src="orientation_acm.jpg" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>Nubra Valley</h3>
+                        </div>
+                        <img src="Logicloom.png" />
+                    </article>
+                </div>
+                <!-- .inner -->
+            </div>
+            <!-- .slider-wrapper -->
+
+            <div class="slider-prev-next-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+                <label for=slide5></label>
+            </div>
+            <!-- .slider-prev-next-control -->
+
+            <div class="slider-dot-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+                <label for=slide5></label>
+            </div>
+            <!-- .slider-dot-control -->
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column links" id="contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:student.chap.acm@xim.edu.in">student.chap.acm@xim.edu.in</a></p>
+                <p>Follow us on our social media platforms for updates</p>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/acm_xim/" target="_blank" class="instagram"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/xim-acm/mycompany/" target="_blank"
+                            class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2024 ACM XIM WEB STYLEDOWN EVENT.</p>
+
         </div>
     </footer>
     <script src="script.js"></script>
