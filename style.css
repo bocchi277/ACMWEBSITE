@@ -106,8 +106,6 @@ nav ul li a:hover {
 
 .dropdown-links {
     display: none;
-    /* overflow: hidden; */
-    /* Hidden on all screen sizes by default */
 }
 .about-section {
     display: flex;
@@ -580,13 +578,13 @@ article img {
     .dropdown-links {
         position: fixed;
         top: 0;
-        left: -55vw;
+        right: -55vw;
         width: 55vw;
         height: 100vh;
         background-color: #1a1a2e;
         flex-direction: column;
         padding-top: 20px;
-        transition: left 0.3s ease;
+        transition: right 0.4s ease;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         display: flex;
     }
@@ -602,7 +600,7 @@ article img {
     }
 
     .dropdown-links.active {
-        left: 0;
+        right: 0;
         /* Slide into view */
     }
     .home-section{
