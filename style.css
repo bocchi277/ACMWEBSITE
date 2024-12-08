@@ -567,7 +567,7 @@ article img {
         /* Hide original navbar */
     }
     .logo img {
-        width: 100px;
+        width: 250px;
         /* Resize the logo for smaller screens */
     }
     .menu-btn {
@@ -630,7 +630,7 @@ article img {
     }
 
     .logo img {
-        width: 100px;
+        width: 150px;
         /* Resize the logo for smaller screens */
     }
 
