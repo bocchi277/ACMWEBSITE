@@ -27,7 +27,7 @@ nav {
 }
 
 header {
-    background: url("/bg2_image.jpg");
+    background: url("bg2_image.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
