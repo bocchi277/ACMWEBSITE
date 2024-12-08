@@ -21,7 +21,8 @@ nav {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 100;
 }
@@ -32,14 +33,13 @@ header {
     background-position: center;
     height: 100vh;
     position: relative;
-    background-size: max(1600px, 100vw);
     background-repeat: no-repeat;
     /* overflow: hidden; */
 }
 
 #overlay {
     background-color: black;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     opacity: 0.54;
     position: absolute;
@@ -63,6 +63,7 @@ header {
 
 .home-content h2 {    
     font-size: 2.4rem;
+    margin-top: 25vh;
 }
 
 .home-content p {    
@@ -80,10 +81,13 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: rgb(85, 85, 244);
+    transition: transform 0.3s ease;
+
 }
 
 nav ul li a:hover {
-    color: rgb(137, 181, 220);
+    color: rgb(0, 47, 88);
+
 }
 
 .logo img {
@@ -195,7 +199,7 @@ nav ul li a:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #tech-talk{
-    width: 100%;
+    width: 93%;
     max-width: fit-content;
 }
 .event-item p,
@@ -515,10 +519,11 @@ article img {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .events-section{
-        height: 130vh;
+        height: 120vh;
     }
     #event-headline{
         font-size: 1.8rem;
+        margin-bottom: 2vh;
     }
     .event-item {
         width: 48%; /* Make the items take up less width on medium screens */
@@ -546,6 +551,9 @@ article img {
 @media (max-width: 480px) {
     .event-item {
         width: 100%; /* Stack the items on small screens */
+    }
+    .events-section{
+        height: 90vh;
     }
 }
 
@@ -601,10 +609,12 @@ article img {
         width: 80vw;
     }
     #overlay{
-        width: 120vw;
+        width: 100vw;
     }
+
     .home-content h2{
         font-size: 1.7rem;
+        margin-top: 30vh;
     }
     .home-content p{
         font-size: 1rem;
